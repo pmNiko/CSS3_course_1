@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+  height: 96vh;
+}
+
+.opinion {
+  padding: 2em;
+  width: 70%;
+  margin: 40px auto;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 1);
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 0.2em;
+}
+
+.text {
+  font-size: 1rem;
+}
+
+.container {
+  /* max-width: 500px;
+  min-width: 200px;
+  min-height: 500px;
+  min-height: 200px; */
+
+  width: 100vw;
+  height: 100vh;
+
+  background: steelblue;
+
+  /* margin arriba y abajo de 30px y centra horizontalmente */
+  margin: 30px auto;
+}
+
+.children {
+  width: 90%;
+  height: 50%;
+  background: crimson;
+}

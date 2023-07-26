@@ -1,0 +1,7 @@
+### Unidades de medida
+
+- Unidades:
+    1. rem: hacen referencia al font-size root por defecto 16px
+        recomendado para textos.
+    2. em: hacen referencia al font-size del padre del elemento.
+        recomendado para elementos de caja.

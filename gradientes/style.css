@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  height: 400px;
+  margin: 30px auto;
+  background: steelblue;
+  background-image: linear-gradient(
+    to top right,
+    rgb(23, 144, 23) 40%,
+    rgba(244, 18, 63, 0.995)
+  );
+}
+
+header {
+  height: 650px;
+  /* contraresta el colapso de margenes */
+  padding: 0.1px;
+  background-image: linear-gradient(to top right, #d8c86aac, #e6254c4d),
+    url(imgs/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  margin-top: 4em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 3em;
+  text-align: center;
+  color: aliceblue;
+}
