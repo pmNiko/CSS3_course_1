@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+  /* max-width: 600px; */
+  height: 600px;
+  outline: 2px solid black;
+  margin: 30px auto;
+  display: flex;
+  /* flex-direction: column; */
+
+  /* flex-direction: row; */
+  /* flex-wrap: wrap;
+  justify-content: space-between; */
+  /* flex-flow: column wrap; */
+
+  /* Alineación en flexbox */
+  /* justify-content: space-between; main-axis */
+  /* align-items: center; cross-axis */
+  /* flex-wrap: wrap; */
+  /* align-content: flex-start; cross-axis con desbordamiento */
+
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.item {
+  width: 80px;
+  --height: 80px;
+  background: tomato;
+  height: var(--height);
+  line-height: var(--height);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  /* flex: grow shrink basis; */
+  /* flex: 1; */
+}
+
+.item1 {
+  background: tomato;
+  /* align-self: flex-end; */
+  /* flex-shrink: 0; */
+  /* order: 1; */
+}
+.item2 {
+  background: violet;
+  /* align-self: stretch;
+  height: auto; */
+  /* text-align: ; */
+}
+.item3 {
+  background: steelblue;
+  /* margin-left: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto; */
+}
+.item4 {
+  background: crimson;
+}
+
+/* @media screen and (min-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .item4 {
+    order: -1;
+  }
+} */

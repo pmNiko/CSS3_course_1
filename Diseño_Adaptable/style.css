@@ -1,0 +1,67 @@
+/* :root {
+  --color: crimson;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  font-style: 3rem;
+  color: crimson;
+  background: none;
+  margin: 40px 0;
+  text-align: center;
+  font-family: monospace;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background: steelblue;
+  }
+}
+
+/* @media screen and (max-width: 400px), (min-width: 900px) {
+  .title {
+    background: black;
+    color: white;
+  }
+} */
+
+/* @media screen and (orientation: portrait) and (max-width: 600px) {
+  .title {
+    text-align: left;
+    background: steelblue;
+  }
+} */
+
+/* @media screen and (orientation: landscape) {
+  .title {
+    margin: 0;
+    color: steelblue;
+    background: black;
+    height: 100vh;
+  }
+} */
+
+/* @media screen and (max-width: 600px) {
+   :root {
+    --color: white;
+  } 
+
+  .title {
+    background: black;
+    color: white;
+  }
+} */
+
+/* @media print {
+  .title {
+    color: steelblue;
+    font-family: cursive;
+    text-align: right;
+    font-size: 5rem;
+  }
+} */
