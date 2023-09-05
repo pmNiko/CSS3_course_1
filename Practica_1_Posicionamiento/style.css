@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:ital,wght@1,300;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  min-height: 200vh;
+}
+
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(180deg, #1414d599 0%, #9b089b79 100%),
+    url("imgs/work.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: contain;
+  padding-top: 0.1px;
+  position: relative;
+}
+
+.container-text {
+  color: white;
+  text-align: center;
+
+  margin-top: 8rem;
+}
+
+.hero__title {
+  font-size: 3rem;
+}
+
+.hero__copy {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.hero__cta {
+  display: inline-block;
+  margin-top: 18rem;
+  padding: 0.7em 1.6em;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: deeppink;
+  background: white;
+}
+
+.hero__cta:hover {
+  background: deeppink;
+  color: white;
+}
+
+.hero__wave {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}

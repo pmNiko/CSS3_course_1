@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+:root {
+  --color-price: #26293a;
+  --color-features: #9c9191;
+  --color-button: white;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: linear-gradient(360deg, var(--color-price) 50%, white 50%);
+  flex-wrap: wrap;
+}
+
+.card__item {
+  max-width: 350px;
+  width: 30%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 40px 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 3px 5px 8px #00000099;
+}
+
+.card__item--active {
+  background: #5275ff;
+  --color-price: white;
+  --color-features: white;
+  --color-button: #26293a;
+}
+
+.card__plan {
+  color: var(--color-price);
+  margin-bottom: 20px;
+}
+
+.card__price {
+  font-size: 3rem;
+  color: var(--color-price);
+}
+
+.card__features {
+  color: var(--color-features);
+  margin-bottom: 25px;
+}
+.card__features--margin {
+  margin: 30px 0 50px;
+}
+
+.card__features:nth-last-of-type(1) {
+  margin-bottom: 50px;
+}
+
+.card__cta {
+  display: inline-block;
+  background: var(--color-price);
+  color: var(--color-button);
+  text-align: center;
+  width: 190px;
+  padding: 20px 0;
+  text-decoration: none;
+  border-radius: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    background: white;
+  }
+
+  .card__item {
+    width: 45%;
+    margin: 40px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    background: white;
+  }
+
+  .card__item {
+    width: 90%;
+    margin: 40px 0;
+  }
+}

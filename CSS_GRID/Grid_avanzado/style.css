@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid {
+  width: 90%;
+  /* max-width: 600px; */
+  height: 600px;
+  margin: 30px auto;
+  outline: 1px solid black;
+  display: grid;
+  /* grid-template-columns: [header-start]1fr 1fr 1fr 1fr[header-end];
+  grid-template-rows: [header-start]1fr [header-end]1fr 1fr; */
+  /* grid-template-columns: repeat(4, [col-start]1fr [col-end]);
+  grid-template-rows: repeat(3, [row-start]1fr [row-end]); */
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header header"
+    "main   main  main sidebar"
+    "footer footer footer footer"; */
+
+  /* grid-template-columns: min-content max-content;
+  grid-template-rows: min-content max-content; */
+  /* grid-template-columns: fit-content(200px); */
+  /* grid-template-columns: minmax(80px, 300px) minmax(20px, 80px); */
+
+  /* grid-template-columns: repeat(auto-fill, 25%); */
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fit, minmax(max-content, 300px)); */
+
+  /* grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 200px); */
+  /* justify-items: center; */
+  /* align-items: center; */
+  /* place-items: center; */
+  /* justify-content: center;
+  align-content: center; */
+
+  /* grid: row / columns */
+  /* grid: 50% 25% 25% / repeat(3, 1fr); */
+
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(4, 150px);
+}
+
+.grid__item {
+  padding: 20px 0;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  order: 0;
+}
+
+.grid :nth-child(1) {
+  background: purple;
+  /* grid-column: col-start 2 / col-end 3;
+  grid-row: row-start 2 / row-end 2; */
+  /* grid-column: header-start / header-end;
+  grid-row: header-start / header-end; */
+  /* order: 1; */
+  /* align-self: center; */
+  /* justify-self: center; */
+}
+.grid :nth-child(2) {
+  background: crimson;
+  /* grid-column: main-start / main-end;
+  grid-row: main-start / main-end; */
+}
+.grid :nth-child(3) {
+  background: steelblue;
+  /* grid-column: sidebar-start / sidebar-end;
+  grid-row: sidebar-start / sidebar-end; */
+}
+.grid :nth-child(4) {
+  background: blue;
+  /* grid-column: footer-start / footer-end;
+  grid-row: footer-start / footer-end; */
+}

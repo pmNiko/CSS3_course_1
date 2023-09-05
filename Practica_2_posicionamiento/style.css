@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:ital,wght@1,300;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.nav {
+  background: purple;
+  height: 4rem;
+  padding: 0 50px;
+  text-align: right;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.enlaces {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  line-height: 4rem;
+  padding: 0 20px;
+}
+
+.enlaces:hover {
+  background: white;
+  color: purple;
+}
+
+.section {
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.section:nth-of-type(1) {
+  margin-top: 4rem;
+
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+
+  /* position: relative;
+  z-index: 1;
+  background: white; */
+}
+.section:nth-of-type(2) {
+  background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+}
+.section:nth-of-type(3) {
+  background-image: linear-gradient(
+    to right,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #b465da 0%,
+    #cf6cc9 33%,
+    #ee609c 66%,
+    #ee609c 100%
+  );
+}
+
+.title {
+  font-size: 3rem;
+  color: aliceblue;
+  text-align: center;
+  line-height: 100vh;
+}
